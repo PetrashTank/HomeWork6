@@ -15,6 +15,11 @@
 Console.Write("Введите числа через запятую: ");
 string[] numbers = Console.ReadLine()!.Split(',');
 int count = 0;
-foreach (var item in numbers)
-    if (int.Parse(item) > 0) count++;
-    Console.WriteLine($"Количество чисел больше 0: {count}");
+ foreach (var item in numbers)
+{
+    if (int.Parse(item) > 0) 
+    {
+        count++;
+    }
+}
+Console.Write($" -> {count}");
